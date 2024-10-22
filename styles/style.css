@@ -189,23 +189,65 @@ body {
   }
 }
 
+/*--------Change Your Habits section --------*/
+.habits-all-section {
+  width: 100%;
+  margin-top: 100px;
+  color: white;
+  & .habit-section {
+    max-width: 1070px;
+    margin: 0px auto;
 
-
-
-
-
-
-
-
-
-
-
-
+    & .content {
+      width: 671px;
+      margin: 0px auto;
+      text-align: center;
+      & h2 {
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 120%;
+      }
+      & p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 14px;
+        margin-bottom: 3.125rem;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+      }
+    }
+    & .habit-img {
+      display: flex;
+      gap: 70px;
+      text-align: center;
+      & img {
+        border-radius: 50%;
+        border: 3px solid #1a1a1a;
+      }
+      & h3 {
+        margin-top: 1.6rem;
+        color: rgb(255, 255, 255);
+      }
+      & p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 14px;
+        margin-bottom: 3.125rem;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
 
 /* responsive small devices */
 @media screen and (max-width: 576px) {
   .nab-head {
-    margin-left: 30px;
+    padding: 30px;
   }
   .nav-items {
     display: none;
@@ -288,6 +330,30 @@ body {
             line-height: 24px;
             padding: 2px;
           }
+        }
+      }
+    }
+  }
+
+  /*--------Change Your Habits section --------*/
+  .habits-all-section {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    & .habit-section {
+      max-width: 100%;
+
+      & .content {
+        width: 100%;
+      }
+      & .habit-img {
+        flex-direction: column;
+        gap: 40px;
+        & h3 {
+          margin-top: 1rem;
+        }
+        & p {
+          margin-bottom: 2rem;
         }
       }
     }
