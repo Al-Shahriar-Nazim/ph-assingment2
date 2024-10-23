@@ -506,6 +506,71 @@ body {
     }
   }
 }
+/* footer-all-section */
+.footer-all-section {
+  width: 100%;
+  margin-top: 90px;
+  background-color: #1a1a1a;
+  height: 480px;
+  padding-top: 70px;
+  & .footer-section {
+    max-width: 1070px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;
+
+    & .first-col {
+      & h2 {
+        color: rgb(230, 83, 60);
+        font-size: 4.3rem;
+        font-weight: 800;
+        line-height: 120%;
+      }
+      & p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    & .secound-col {
+      & h3 {
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: 36px;
+      }
+      & ul li {
+        list-style: none;
+        margin-bottom: 10px;
+        & a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 23px;
+          font-weight: 400;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+  & hr {
+    color: rgba(255, 255, 255, 0.5);
+    width: 1060px;
+    margin: 0px auto;
+    margin-top: 70px;
+  }
+  & p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
 /* responsive small devices */
 @media screen and (max-width: 576px) {
   .nab-head {
@@ -774,6 +839,33 @@ body {
           border-radius: 18px;
         }
       }
+    }
+  }
+  /* footer-all-section */
+  .footer-all-section {
+    padding: 10px;
+    width: 100%;
+    margin-top: 50px;
+    height: 980px;
+    padding-top: 50px;
+    & .footer-section {
+      width: 100%;
+      margin: 0px auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+
+      & .first-col {
+      }
+      & .secound-col {
+        & h3 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    & hr {
+      color: rgba(255, 255, 255, 0.5);
+      width: 90%;
     }
   }
 }
